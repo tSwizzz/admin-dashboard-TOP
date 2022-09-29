@@ -10,13 +10,15 @@ p {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 1fr 4fr;
 }
 
 /* ----------STYLING FOR SIDEBAR---------- */
 .sidebar {
     display: grid;
-    grid-template-rows: repeat(16, 65px);
+    grid-row: 1/3;
+    grid-template-rows: repeat(16, 60px);
     background-color: #1b1b1b ;
 }
 .sideHeader {
@@ -55,9 +57,14 @@ img {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 100px 100px;
+    grid-column: 2/4;
+    grid-row: 1/2;
     margin-top: 6px;
+    border-bottom: solid 2px black;
 }
-
+.search {
+    margin-left: 40px;
+}
 .userProfileContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -66,19 +73,54 @@ img {
 }
 .userProfileDisplay {
     display: grid;
-    grid-template-columns: 50px 100px;
+    grid-template-columns: 50px 200px;
+    margin-left: 40px;
 }
 .profileIcon {
+    height: 40px;
     margin-top: -4px;
 }
-
+#biggerProfileIcon {
+    height: 50px;
+    margin-right: 20px;
+}
+.userActivities, .userProfileContent {
+    margin-right: 100px;
+}
 .userActivities {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
 }
+
 .activity {
     height: 10px;
     background-color: lightblue;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
+}
+label {
+    color: green;
+    font-weight: 700;
+    font-size: xx-large;
+}
+input {
+    border-radius: 20px;
+    width: 220px;
+}
+/* XXXXXXXXXX STYLING FOR HEADER XXXXXXXXXX */
+
+/* ---------- STYLING FOR CARDS ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: ;
 }
