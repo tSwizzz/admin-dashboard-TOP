@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: "theFont";
+    src: url(fonts/Roboto-Black.ttf);
+}
+p {
+    font-family: "theFont";
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* ----------STYLING FOR SIDEBAR---------- */
+.sidebar {
+    display: grid;
+    grid-template-rows: repeat(16, 65px);
+    background-color: #1b1b1b ;
+}
+.sideHeader {
+    display: grid;
+    grid-template-columns: 20px 20px;
+    gap: 15px;
+    color:white;
+    margin-left: 12px;
+}
+img {
+    background-color: white;
+}
+
+#sideHeaderInfo {
+    margin-left: -3px;
+    gap:90px;
+}
+
+#mainTitle {
+    font-style:oblique;
+    color: white;
+    align-self: center;
+}
+
+
+.headerLogo {
+    width:70px;
+    height:80px;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+/* XXXXXXXXXX STYLING FOR SIDEBAR XXXXXXXXXX */
+
+/* ----------STYLING FOR HEADER ---------- */
+.header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100px 100px;
+    margin-top: 6px;
+}
+
+.userProfileContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 30px;
+    font-style: oblique;
+}
+.userProfileDisplay {
+    display: grid;
+    grid-template-columns: 50px 100px;
+}
+.profileIcon {
+    margin-top: -4px;
+}
+
+.userActivities {
+    display: flex;
+    gap: 35px;
+}
+.activity {
+    height: 10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 15px;
+}
